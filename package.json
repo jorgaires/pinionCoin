@@ -1,0 +1,22 @@
+{
+  "name": "pinioncoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chain.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgaires/pinionCoin.git"
+  },
+  "author": "Jorge Aires",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorgaires/pinionCoin/issues"
+  },
+  "homepage": "https://github.com/jorgaires/pinionCoin#readme",
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  }
+}
