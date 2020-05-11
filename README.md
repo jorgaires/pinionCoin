@@ -1,4 +1,4 @@
-# Pinioncoin - A Cryptocurrency Blockchain In Node.js (beta)
+# Pinioncoin - A cryptocurrency blockchain In Node.js (beta)
 
 Instructions to run: 
 
