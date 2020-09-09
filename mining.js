@@ -1,6 +1,6 @@
 const { CryptoBlock, CryptoBlockchain } = require('./chain');
 
-let pinionCoin = new CryptoBlockchain();
+let pinionCoin = new CryptoBlockchain(difficulty = 5);
 
 console.log("pinionCoin mining in progress...");
 pinionCoin.addNewBlock(

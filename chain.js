@@ -67,12 +67,13 @@ class CryptoBlockchain {
      * Instantiates the blockchain.
      * Refers to an array of blocks and add the initial block in the chain.
      *
+     * difficulty => Ensuring the hash of every block begins with the number of zeros as set in the difficulty level requires a lot of computing power. 
      */
-    constructor() {
+    constructor(difficulty) {
         this.blockchain = [
             this.startGenesisBlock()
         ];
-        this.difficulty = 4;
+        this.difficulty = difficulty;
     }
 
     /*
@@ -114,7 +115,6 @@ class CryptoBlockchain {
      */
     addNewBlock(newBlock) {
         newBlock.precedingHash = this.obtainLatestBlock().hash;
-        // newBlock.hash = newBlock.computeHash();
         newBlock.proofOfWork(this.difficulty);
         this.blockchain.push(newBlock);
     }
